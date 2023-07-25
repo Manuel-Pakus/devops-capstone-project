@@ -64,7 +64,7 @@ def create_accounts():
 
 @app.route("/accounts", methods=["GET"])
 def list_accounts():
-   """
+    """
     List all Accounts
     This endpoint will list all Accounts
     """
@@ -86,7 +86,7 @@ def list_accounts():
 def get_accounts(account_id):
     """
     Reads an Account
-    This endpoint will read an Account based the account_id that is requested
+    This endpoint will read an Account based on the account_id that is requested
     """
     app.logger.info("Request to read an Account with id: %s", account_id)
     account = Account.find(account_id)
